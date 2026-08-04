@@ -1,0 +1,432 @@
+/* =====================================================
+   LIBYAN CENTRE DESIGN ENHANCEMENT
+   Visual Upgrade Layer
+===================================================== */
+
+
+/* ==========================
+   NEW COLOR SYSTEM
+========================== */
+
+:root{
+
+    --primary:#123B4A;
+    --primary-dark:#092832;
+
+    --secondary:#1F6F78;
+
+    --accent:#D4AF37;
+    --accent-light:#F5E7B2;
+
+    --background:#F7F9FB;
+
+    --surface:#FFFFFF;
+
+    --text:#17212B;
+    --text-light:#64748B;
+
+    --border:#E2E8F0;
+
+
+    --shadow-soft:
+    0 10px 40px rgba(15,76,92,.06);
+
+
+    --shadow-hover:
+    0 25px 70px rgba(15,76,92,.14);
+
+}
+
+
+
+/* ==========================
+   GLOBAL
+========================== */
+
+
+body{
+
+    background:
+    linear-gradient(
+        180deg,
+        #F8FAFC,
+        #FFFFFF
+    );
+
+}
+
+
+p{
+
+    line-height:1.9;
+
+}
+
+
+/* ==========================
+   TYPOGRAPHY
+========================== */
+
+
+h1,
+h2,
+h3,
+h4{
+
+    letter-spacing:-0.4px;
+
+}
+
+
+h1{
+
+    font-weight:800;
+
+}
+
+
+h2{
+
+    font-weight:750;
+
+}
+
+
+/* ==========================
+   HEADER
+========================== */
+
+
+.header{
+
+    background:
+    rgba(255,255,255,.82);
+
+    backdrop-filter:
+    blur(18px);
+
+    box-shadow:
+
+    0 8px 30px rgba(0,0,0,.04);
+
+}
+
+
+.nav-links a{
+
+    font-weight:600;
+
+}
+
+
+.nav-links a:hover{
+
+    color:var(--secondary);
+
+}
+
+
+.nav-links a.active::after{
+
+    height:3px;
+
+    border-radius:10px;
+
+}
+
+
+
+/* ==========================
+   BUTTONS
+========================== */
+
+
+.btn-primary{
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+
+    box-shadow:
+    0 12px 30px rgba(15,76,92,.22);
+
+}
+
+
+.btn-primary:hover{
+
+    transform:
+    translateY(-5px);
+
+    box-shadow:
+    0 20px 45px rgba(15,76,92,.3);
+
+}
+
+
+
+.btn-outline{
+
+    border-width:2px;
+
+}
+
+
+
+/* ==========================
+   SECTION LABELS
+========================== */
+
+
+.section-header span,
+.section-tag{
+
+
+    background:
+    rgba(212,175,55,.12);
+
+
+    color:
+    #A67C00;
+
+
+    padding:
+    8px 18px;
+
+
+    border-radius:
+    50px;
+
+
+    letter-spacing:
+    1.5px;
+
+}
+
+
+
+/* ==========================
+   CARDS
+========================== */
+
+
+.card,
+.research-card,
+.pillar,
+.field-card,
+.track-card,
+.structure-card,
+.policy-card,
+.vision-card{
+
+
+    border:
+
+    1px solid rgba(15,76,92,.08);
+
+
+    box-shadow:
+
+    var(--shadow-soft);
+
+
+}
+
+
+
+.card:hover,
+.research-card:hover,
+.pillar:hover,
+.field-card:hover,
+.track-card:hover,
+.structure-card:hover,
+.policy-card:hover,
+.vision-card:hover{
+
+
+    box-shadow:
+
+    var(--shadow-hover);
+
+
+}
+
+
+
+/* ==========================
+   ICONS
+========================== */
+
+
+.card-icon,
+.structure-icon,
+.field-number,
+.track-number,
+.policy-number,
+.vision-number{
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #EEF7F8,
+        #FFFFFF
+    );
+
+
+    border:
+
+    1px solid rgba(15,76,92,.08);
+
+
+}
+
+
+
+/* ==========================
+   HERO
+========================== */
+
+
+.hero{
+
+
+background:
+
+linear-gradient(
+90deg,
+rgba(9,40,50,.92),
+rgba(15,76,92,.65)
+),
+
+url("../assets/images/hero/hero.jpg");
+
+}
+
+
+
+.hero-badge{
+
+
+background:
+
+rgba(255,255,255,.18);
+
+
+border:
+
+1px solid rgba(255,255,255,.25);
+
+
+}
+
+
+
+/* ==========================
+   WORK SECTION
+========================== */
+
+
+.work-number{
+
+
+background:
+
+linear-gradient(
+135deg,
+var(--primary),
+var(--secondary)
+);
+
+
+box-shadow:
+
+0 10px 25px rgba(15,76,92,.25);
+
+}
+
+
+
+/* ==========================
+   CTA
+========================== */
+
+
+.cta{
+
+
+background:
+
+linear-gradient(
+135deg,
+rgba(9,40,50,.95),
+rgba(15,76,92,.85)
+),
+
+url("../assets/images/backgrounds/cta.jpg");
+
+}
+
+
+
+.cta h2{
+
+font-weight:800;
+
+}
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+.footer{
+
+
+background:
+
+linear-gradient(
+135deg,
+#092832,
+#123B4A
+);
+
+
+}
+
+
+
+.footer a:hover{
+
+color:
+
+var(--accent);
+
+}
+
+
+
+/* ==========================
+   SMOOTH EFFECTS
+========================== */
+
+
+.card,
+.btn,
+.nav-links a,
+.research-card,
+.pillar{
+
+
+transition:
+
+all .35s ease;
+
+}

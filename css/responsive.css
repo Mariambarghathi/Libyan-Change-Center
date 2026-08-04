@@ -1,0 +1,571 @@
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+
+/* ==========================
+   LARGE TABLETS
+========================== */
+
+@media(max-width:1100px){
+
+
+    :root{
+        --container:960px;
+    }
+
+
+    .nav-links{
+
+        gap:18px;
+
+    }
+
+
+    .nav-links a{
+
+        font-size:.85rem;
+
+    }
+
+
+    .hero h1{
+
+        font-size:52px;
+
+    }
+
+
+    .work-grid{
+
+        gap:40px;
+
+    }
+
+
+    .footer-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+/* ==========================
+   TABLETS
+========================== */
+
+@media(max-width:900px){
+
+
+    section{
+
+        padding:60px 0;
+
+    }
+
+
+    h1{
+
+        font-size:40px;
+
+    }
+
+
+    h2{
+
+        font-size:32px;
+
+    }
+
+
+    h3{
+
+        font-size:24px;
+
+    }
+
+
+
+    /* HEADER */
+
+    .navbar{
+
+        height:75px;
+
+    }
+
+
+    .logo img{
+
+        height:50px;
+
+    }
+
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+
+    .nav{
+
+        position:absolute;
+
+        top:75px;
+
+        left:0;
+
+        width:100%;
+
+    }
+
+
+    .nav-links{
+
+        display:none;
+
+        flex-direction:column;
+
+        gap:0;
+
+        background:white;
+
+        width:100%;
+
+        padding:25px;
+
+        box-shadow:var(--shadow-md);
+
+    }
+
+
+    .nav-links.active{
+
+        display:flex;
+
+    }
+
+
+    .nav-links li{
+
+        width:100%;
+
+        text-align:center;
+
+        padding:12px 0;
+
+    }
+
+
+    .nav-links a.active::after{
+
+        display:none;
+
+    }
+
+
+
+    /* HERO */
+
+    .hero{
+
+        min-height:auto;
+
+        padding:100px 0;
+
+    }
+
+
+    .hero h1{
+
+        font-size:42px;
+
+    }
+
+
+
+    /* GRIDS */
+
+
+    .grid-4{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .grid-3{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .work-grid,
+    .intro-grid,
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .work-image{
+
+        order:-1;
+
+    }
+
+
+
+    /* PAGE CONTENT */
+
+
+    .content-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .sidebar{
+
+        position:relative;
+
+        top:0;
+
+    }
+
+
+
+    /* FOOTER */
+
+
+    .footer-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+
+}
+
+
+
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:600px){
+
+
+
+    .container{
+
+        padding-inline:15px;
+
+    }
+
+
+
+    section{
+
+        padding:50px 0;
+
+    }
+
+
+
+    h1{
+
+        font-size:34px;
+
+    }
+
+
+    h2{
+
+        font-size:28px;
+
+    }
+
+
+    h3{
+
+        font-size:21px;
+
+    }
+
+
+
+    /* HEADER */
+
+
+    .nav-actions{
+
+        gap:8px;
+
+    }
+
+
+    .lang-btn{
+
+        padding:8px 14px;
+
+        font-size:.85rem;
+
+    }
+
+
+
+    /* HERO */
+
+
+    .hero{
+
+        padding:80px 0;
+
+    }
+
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+    }
+
+
+
+    /* BUTTONS */
+
+
+    .btn{
+
+        padding:12px 22px;
+
+    }
+
+
+
+    /* GRIDS */
+
+
+    .grid-2,
+    .grid-3,
+    .grid-4{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .pillars-grid,
+    .fields-grid,
+    .tracks-grid,
+    .structure-grid,
+    .policies-grid,
+    .principles-grid,
+    .vision-grid,
+    .functions-list,
+    .attachments-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    /* CARDS */
+
+
+    .card,
+    .research-card,
+    .field-card,
+    .track-card,
+    .pillar,
+    .policy-card,
+    .vision-card{
+
+        padding:25px;
+
+    }
+
+
+
+    /* PAGE BANNER */
+
+
+    .page-banner{
+
+        padding:100px 0 60px;
+
+    }
+
+
+    .page-banner h1{
+
+        font-size:36px;
+
+    }
+
+
+
+    /* WORK SECTION */
+
+
+    .work-item{
+
+        gap:15px;
+
+    }
+
+
+    .work-number{
+
+        width:45px;
+
+        height:45px;
+
+        font-size:.9rem;
+
+    }
+
+
+
+    /* CTA */
+
+
+    .cta{
+
+        padding:80px 0;
+
+    }
+
+
+    .cta h2{
+
+        font-size:32px;
+
+    }
+
+
+
+    /* EXECUTION BOX */
+
+
+    .execution-box,
+    .documents-box,
+    .principles-box{
+
+        padding:30px;
+
+    }
+
+
+
+    /* ATTACHMENTS */
+
+
+    .attachment-card{
+
+        flex-direction:column;
+
+    }
+
+
+
+    /* FOOTER */
+
+
+    .footer{
+
+        padding:60px 0 25px;
+
+    }
+
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+
+    .footer-logo{
+
+        margin:auto;
+
+    }
+
+
+    .footer ul{
+
+        align-items:center;
+
+    }
+
+
+
+}
+
+
+
+
+/* ==========================
+   SMALL PHONES
+========================== */
+
+
+@media(max-width:380px){
+
+
+    .hero h1{
+
+        font-size:30px;
+
+    }
+
+
+    .lang-btn{
+
+        display:none;
+
+    }
+
+
+}
