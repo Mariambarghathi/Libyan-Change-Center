@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/libyanc4/public_html/
-    - /bin/cp -R ar css js assets *.html favicon.ico CNAME $DEPLOYPATH
+    - /bin/cp -R ar css js assets *.html favicon.ico $DEPLOYPATH
